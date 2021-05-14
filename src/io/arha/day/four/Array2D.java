@@ -1,6 +1,6 @@
 package io.arha.day.four;
 
-public class Array2D {
+public class Array2D { 
 	public static void main(String[] arg) {
 		
 		
