@@ -3,7 +3,6 @@ package io.arha.day.four;
 public class Array2D { 
 	public static void main(String[] arg) {
 		
-		
 		String[][] arr = new String[2][3];// init
 		//add values
 		for (int row = 0; row < arr.length; row++) {
