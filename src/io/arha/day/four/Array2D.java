@@ -4,8 +4,8 @@ public class Array2D {
 	public static void main(String[] arg) {
 		
 		
-		String[][] arr = new String[2][3];
-
+		String[][] arr = new String[2][3];// init
+		//add values
 		for (int row = 0; row < arr.length; row++) {
 
 			for (int col = 0; col < arr[row].length; col++) {
@@ -14,7 +14,9 @@ public class Array2D {
 			}
 			System.out.println();
 		}
+		//add
 
+		//print
 		for (int row = 0; row < arr.length; row++) {
 
 			for (int col = 0; col < arr[row].length; col++) {
