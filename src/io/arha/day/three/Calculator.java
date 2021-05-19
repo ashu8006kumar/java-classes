@@ -30,12 +30,7 @@ public class Calculator {
 			break;
 		case '/':
 			System.out.println("in devision");
-			try { 
-				result = number1 / number2;
-			} catch (ArithmeticException ae) { 
-				throw ae;
-
-			}
+			result = number1 / number2;
 			break;
 
 		default:
@@ -46,9 +41,4 @@ public class Calculator {
 		return result;
 	}
 
-	public static void main(String[] agr) {
-		Calculator calculator = new Calculator(12.0, 0, '/');
-		System.out.println(calculator.calculate());
-
-	}
 }
