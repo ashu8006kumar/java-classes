@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class Demo {
 	public static void main(String[] agr) {
-		User nimesh = new User("nimesh", 1); //1-true
-		User rinku = new User("Rinku", 2); //1-true
+		User nimesh = new User("nimesh", 1); 
+		User rinku = new User("Rinku", 2); 
 		User aiman = new User("Aiman", 3);
 		User rinku2 = new User("Rinku", 2); 
 		
