@@ -27,19 +27,30 @@ public class User {
 
 	@Override
 	public int hashCode() {
-		return rollNumber % 2; // 0,1
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + rollNumber;
+		return result;
 	}
 
 	@Override
-	public boolean equals(Object o) {
-		if (o instanceof User) {
-			User user = (User) o;
-			if (rollNumber == user.rollNumber) {
-				return ((name != null && name.equals(user.name)) || (name == null || user.name == null));
-			}
-		}
-		return false;
-
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (rollNumber != other.rollNumber)
+			return false;
+		return true;
 	}
 
 }
